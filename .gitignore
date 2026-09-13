@@ -1,0 +1,46 @@
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+install/
+log/
+logs/
+# Local recordings, generated reports and benchmarks
+/data/
+/sessions/
+/benchmarks/
+/results/
+/cloud/results/
+*.db3
+*.mcap
+*.bag
+*.mp4
+*.avi
+# Offline dependencies and model assets
+/offline/
+/cloud/offline/
+wheelhouse/
+miniconda3/
+third_party/
+models/
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.whl
+*.tar
+*.tar.gz
+*.zip
+# Host configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store

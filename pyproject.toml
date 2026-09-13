@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "u-robot-duck-dataset"
+version = "0.1.0"
+description = "Capture and prepare Unitree front-camera sessions for duck auto-labeling"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.21",
+  "opencv-python>=4.5",
+  "PyYAML>=5.4",
+]
+
+[project.scripts]
+duck-dataset = "u_robot_duck_dataset.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

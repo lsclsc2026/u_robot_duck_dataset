@@ -25,7 +25,7 @@ duck-dataset --help
 
 `--no-deps` 使用已有系统图像库。`pyproject.toml` 中机器人 CPU 依赖是最低版本约束，尚非完整锁定环境；不要把云端 CUDA 锁文件安装进机器人环境。
 
-相机由 [u_robot_move](https://github.com/lsclsc2026/u_robot_move) 的 `u_robot_camera_bridge` 提供；其 SDK、网卡和 DDS 设置按导航仓库文档配置。此仓库不附带厂商 SDK。
+相机由 [宇树四足机器人室内导航与多点巡逻](https://github.com/lsclsc2026/u_robot_move) 的 `u_robot_camera_bridge` 提供；其 SDK、网卡和 DDS 设置按导航仓库文档配置。此仓库不附带厂商 SDK。
 
 ## 路径与持久化
 
@@ -37,7 +37,7 @@ export U_ROBOT_DUCK_DATA_ROOT="$HOME/data/duck_dataset"
 
 `init/index/serve` 的 `--root`、录制与网页脚本的 `--root`、验证集构建器的 `--data-root` 优先于环境变量。`extract/validate/visualize` 使用显式 `--session`。配置文件 `configs/duck.yaml` 目前是参考表，CLI **不会读取这个 YAML**；修改它不会改变脚本行为。
 
-容器部署见 [Docker 入口](../docker/README.md) 和 [unitree_docker](https://github.com/lsclsc2026/unitree_docker)。检查数据目录是否映射到宿主机持久目录；源码挂载与数据挂载分别设置，不能由容器名推断持久性。
+容器部署见 [Docker 入口](../docker/README.md) 和 [宇树机器人容器化开发环境](https://github.com/lsclsc2026/unitree_docker)。检查数据目录是否映射到宿主机持久目录；源码挂载与数据挂载分别设置，不能由容器名推断持久性。
 
 ## 无 ROS 的电脑
 

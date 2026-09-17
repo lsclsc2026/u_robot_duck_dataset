@@ -1,4 +1,4 @@
-# u_robot_duck_dataset
+# 机器人视觉数据采集与鸭子检测工具
 
 从 Unitree A2 Pro 前视相机建立可追溯的数据集：录制 ROS 2 session、无损提取压缩帧、生成检查报告，并在独立云端虚拟环境中扫描 Grounding DINO 候选框。
 
@@ -63,6 +63,6 @@ export SESSION_DIR="$U_ROBOT_DUCK_DATA_ROOT/sessions/SESSION_ID"
 
 ## 相关项目与许可
 
-[导航与相机桥接 u_robot_move](https://github.com/lsclsc2026/u_robot_move) · [语音播报 u_robot_audio](https://github.com/lsclsc2026/u_robot_audio) · [共用开发环境 unitree_docker](https://github.com/lsclsc2026/unitree_docker)
+[宇树四足机器人室内导航与多点巡逻](https://github.com/lsclsc2026/u_robot_move) · [宇树机器人语音播报系统](https://github.com/lsclsc2026/u_robot_audio) · [宇树机器人容器化开发环境](https://github.com/lsclsc2026/unitree_docker)
 
 首版用于私有审阅，尚未为原创代码选定开源许可证。外部库、模型、SDK 的权利和使用条件见[第三方依赖说明](THIRD_PARTY.md)。
